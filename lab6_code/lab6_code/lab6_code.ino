@@ -1,6 +1,7 @@
 const int sensor_pin = 0; // pin A0
 int pulse_signal = 0;
 float BPM = 0;
+float pulse_period = 0;
 
 bool any_peak_detected = false;
 bool first_peak_detected = false;
@@ -8,8 +9,8 @@ bool first_peak_detected = false;
 unsigned long first_pulse_time = 0;
 unsigned long second_pulse_time = 0;
 
-int upper_threshold = 840;
-int lower_threshold = 795;
+int upper_threshold = 880;
+int lower_threshold = 780;
 
 void setup() {
   // put your setup code here, to run once:
